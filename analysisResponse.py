@@ -1,5 +1,6 @@
 import numpy
 import DyMat
+from scipy.io import savemat
 import matplotlib.pyplot as plt
 
 
@@ -9,7 +10,8 @@ class AR:
         self.testID = param[1]
         self.requestName = param[2]
         self.simTime = param[3]
-        self.deltaTime = param[4]        
+        self.deltaTime = param[4] 
+        self.resFileName = param[5]       
     
     def __del__(self):
         print("")
@@ -33,13 +35,24 @@ class AR:
 
         return res
 
+    def writeMatFile(self):
+        res = self.loadResult()
+        drv_save = {}
+        
+        drv_save["data"] = res
+        savemat(self.resFileName, drv_save)
+        return 0
+
+
+
+
     def RnH_stepSteer(self):
-        nPI = 
+        nPI = []
         # step 01: load resuslt
         res = self.loadResult()
 
         # step 02 : calcualte PI
-        PI = 
+        PI = []
 
         return PI
 

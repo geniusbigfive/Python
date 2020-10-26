@@ -1,0 +1,112 @@
+{
+    "_time": "_time.y",
+
+    "frontSuspension": {
+        "Left":{
+            "spring": {
+                "deflection": "CAVALRY.axle1.leftSpring.s_rel"
+            },
+        
+            "damper": {
+                "rodAxialForce": "CAVALRY.axle1.leftDamper.f"
+            },
+
+            "upperArm":{
+                "ballJoint":{
+                    "fx":"CAVALRY.axle1.leftLinkage.upperJoint.fJ[1]",
+                    "fy":"CAVALRY.axle1.leftLinkage.upperJoint.fJ[2]"
+                }
+            },
+
+            "lowerArm":{
+                "ballJoint":{
+                    "fx":"CAVALRY.axle1.leftLinkage.lowerJoint.fJ[1]",
+                    "fy":"CAVALRY.axle1.leftLinkage.lowerJoint.fJ[2]"
+                }
+            },
+
+            "tieRod":{
+                "axialForce": "CAVALRY.axle1.leftLinkage.steerLink.summary_fJ1_axial"
+            }
+        },
+
+        "Right":{
+            "spring": {
+                "deflection": "CAVALRY.axle1.rightSpring.s_rel"
+            },
+        
+            "damper": {
+                "rodAxialForce": "CAVALRY.axle1.rightDamper.f"
+            },
+
+            "upperArm":{
+                "ballJoint":{
+                    "fx":"CAVALRY.axle1.rightLinkage.upperJoint.fJ[1]",
+                    "fy":"CAVALRY.axle1.rightLinkage.upperJoint.fJ[2]"
+                }
+            },
+
+            "lowerArm":{
+                "ballJoint":{
+                    "fx":"CAVALRY.axle1.rightLinkage.lowerJoint.fJ[1]",
+                    "fy":"CAVALRY.axle1.rightLinkage.lowerJoint.fJ[2]"
+                }
+            },
+
+            "tieRod":{
+                "axialForce": "CAVALRY.axle1.rightLinkage.steerLink.summary_fJ1_axial"
+            }
+        }
+    },
+
+    "rearSuspension": {
+        "Left":{
+            "spring": {
+                "deflection": "CAVALRY.axle2.leftSpring.s_rel"
+            },
+        
+            "damper": {
+                "rodAxialForce": "CAVALRY.axle2.leftDamper.f"
+            },
+
+            "upperArm":{
+                "ballJoint":{
+                    "fx":"CAVALRY.axle2.leftLinkage.upperJoint.fJ[1]",
+                    "fy":"CAVALRY.axle2.leftLinkage.upperJoint.fJ[2]"
+                }
+            },
+
+            "lowerArm":{
+                "ballJoint":{
+                    "fx":"CAVALRY.axle2.leftLinkage.lowerJoint.fJ[1]",
+                    "fy":"CAVALRY.axle2.leftLinkage.lowerJoint.fJ[2]"
+                }
+            }
+        },
+
+        "Right":{
+            "spring": {
+                "deflection": "CAVALRY.axle2.rightSpring.s_rel"
+            },
+
+            "damper": {
+                "rodAxialForce": "CAVALRY.axle2.rightDamper.f"
+            },
+            
+            "upperArm":{
+                "ballJoint":{
+                    "fx":"CAVALRY.axle2.rightLinkage.upperJoint.fJ[1]",
+                    "fy":"CAVALRY.axle2.rightLinkage.upperJoint.fJ[2]"
+                }
+            },
+
+            "lowerArm":{
+                "ballJoint":{
+                    "fx":"CAVALRY.axle2.rightLinkage.lowerJoint.fJ[1]",
+                    "fy":"CAVALRY.axle2.rightLinkage.lowerJoint.fJ[2]"
+                }
+            }
+        }
+    }    
+}
+
